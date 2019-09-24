@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.1;netstandard2.0;net35;net40</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
     <AssemblyVersion>4.5.3.2</AssemblyVersion>
     <FileVersion>4.5.3.2</FileVersion>
     <Version>4.5.3.2</Version>
@@ -231,7 +231,7 @@ Release Candidate changes
     <DefineConstants>Core;STANDARD20</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1'">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0'">
     <DefineConstants>Core</DefineConstants>
   </PropertyGroup>
 
@@ -294,7 +294,7 @@ Release Candidate changes
     <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
     <PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
     <PackageReference Include="System.Drawing.Common" Version="4.6.0-preview6.19303.8" />
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="4.5.2" />
     <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
